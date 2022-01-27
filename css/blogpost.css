@@ -1,0 +1,42 @@
+.blogpost-main {
+  flex-direction: column;
+}
+
+.blogpost {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  max-width: 640px;
+  min-width: 300px;
+}
+
+.blogpost-image {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.blogpost-text {
+  padding-bottom: 30px;
+}
+
+.dashed-top {
+  padding-top: 30px;
+  border-top: 1px dashed #AAA;
+}
+
+.author {
+  background-image: url(../img/author.jpg);
+  background-repeat: no-repeat;
+  padding-left: 320px;
+}
+
+.authorSocial {
+  padding-top: 40px;
+}
+
+li {
+  display: inline;
+}

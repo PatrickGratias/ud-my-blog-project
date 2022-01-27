@@ -1,0 +1,75 @@
+body {
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 100px auto 100px 50px;
+  grid-template-areas:
+    "hd"
+    "nv"
+    "main"
+    "as"
+    "ft";
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+  body {
+    font-family: monospace;
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 100px auto 100px 50px;
+    grid-template-areas:
+      "hd nv"
+      "main main"
+      "as as"
+      "ft ft";
+  }
+
+}
+
+
+@media(min-width: 901px) {
+    body {
+      font-family: monospace;
+      display: grid;
+      grid-template-columns: auto 300px;
+      grid-template-rows: 100px auto 50px;
+      grid-template-areas:
+        "hd nv"
+        "main as"
+        "ft ft";
+    }
+}
+
+h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+header {
+  grid-area: hd;
+}
+
+nav {
+  grid-area: nv;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: as;
+}
+
+footer {
+  grid-area: ft;
+}
