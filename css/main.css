@@ -19,6 +19,10 @@ main {
   padding-bottom: 1rem;
 }
 
+figcaption {
+  text-align: center;
+}
+
 .card-text {
   margin-top: 1rem;
   min-height: 3rem;
